@@ -1,0 +1,18 @@
+{
+   "manifest_version": 2,
+
+   "name": "One-click Kittens",
+   "description": "Douga recommend system",
+   "version": "0.1",
+
+   "permissions": [
+     "http://rec-douga.herokuapp.com/"
+   ],
+
+   "content_scripts": [
+     {
+       "matches": ["http://www.nicovideo.jp/watch/*"],
+       "js": ["jquery-1.10.2.min.js", "get-douga.js"]
+     }
+   ]
+}
